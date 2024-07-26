@@ -1,0 +1,393 @@
+/* Import Raleway Font */
+@font-face {
+    font-family: 'Raleway';
+    src: url("installed/fonts/Raleway-Regular.ttf");
+}
+
+/* CSS Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent; /* Prevent tap highlight on touch devices */
+    font-family: 'Raleway', Arial, sans-serif; /* Apply Raleway font globally */
+    font-weight: 300; /* Make text weight thin by default */
+}
+
+html, body {
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f4f4f4 0%, #e0e0e0 100%);
+    background-attachment: fixed;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    color: #222;
+    font-weight: 300; /* Ensure headers are also thin by default */
+    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.75rem; }
+h5 { font-size: 1.5rem; }
+h6 { font-size: 1.25rem; }
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f4f4f4 100%);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+    background: linear-gradient(135deg, #ffffff 0%, #f4f4f4 100%);
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+}
+
+a:hover {
+    text-decoration: underline;
+    background: linear-gradient(135deg, #f4f4f4 0%, #ffffff 100%);
+}
+
+/* Buttons */
+button, input[type="button"], input[type="submit"], .btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #007BFF 0%, #0056b3 100%);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover, .btn:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #003e7e 100%);
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #007BFF 0%, #0056b3 100%);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #0056b3 0%, #003e7e 100%);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #6c757d 0%, #545b62 100%);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #545b62 0%, #3d4349 100%);
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #28a745 0%, #218838 100%);
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #218838 0%, #1a6b2d 100%);
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #c82333 0%, #a11d26 100%);
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #ffc107 0%, #e0a800 100%);
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(135deg, #e0a800 0%, #b38700 100%);
+}
+
+.btn-info {
+    background: linear-gradient(135deg, #17a2b8 0%, #138496 100%);
+}
+
+.btn-info:hover {
+    background: linear-gradient(135deg, #138496 0%, #0f6370 100%);
+}
+
+.btn-light {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e2e6ea 100%);
+    color: #212529;
+}
+
+.btn-light:hover {
+    background: linear-gradient(135deg, #e2e6ea 0%, #d1d5d9 100%);
+}
+
+.btn-dark {
+    background: linear-gradient(135deg, #343a40 0%, #23272b 100%);
+}
+
+.btn-dark:hover {
+    background: linear-gradient(135deg, #23272b 0%, #1a1d21 100%);
+}
+
+/* Forms */
+input, textarea, select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f4f4f4 100%);
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007BFF;
+    outline: none;
+    background: linear-gradient(135deg, #e0f0ff 0%, #b3daff 100%);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f4f4f4 100%);
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: linear-gradient(135deg, #f4f4f4 0%, #e0e0e0 100%);
+    font-weight: bold;
+}
+
+/* Utility Classes (Optional) */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+.d-flex { display: flex; }
+.justify-content-center { justify-content: center; }
+.align-items-center { align-items: center; }
+
+/* Cards */
+.card {
+    background: linear-gradient(135deg, #ffffff 0%, #f4f4f4 100%);
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #f4f4f4 0%, #e0e0e0 100%);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.card-body {
+    font-size: 1rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f4f4f4 100%);
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+}
+
+/* Hover Card */
+.hover-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f4f4f4 100%);
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.hover-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* More Modern UI Classes */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    background: linear-gradient(135deg, #007BFF 0%, #0056b3);
+}
+
+/* Buttons with Gradients */
+button, input[type="button"], input[type="submit"], .btn {
+    background: linear-gradient(to right, #007BFF, #0056b3); /* Gradient background */
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover, .btn:hover {
+    background: linear-gradient(to right, #0056b3, #003d7a); /* Darker gradient on hover */
+}
+
+/* Button Variants with Gradients */
+.btn-primary {
+    background: linear-gradient(to right, #007BFF, #0056b3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #0056b3, #003d7a);
+}
+
+.btn-secondary {
+    background: linear-gradient(to right, #6c757d, #5a6268);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(to right, #545b62, #4a4c50);
+}
+
+.btn-success {
+    background: linear-gradient(to right, #28a745, #218838);
+}
+
+.btn-success:hover {
+    background: linear-gradient(to right, #218838, #1e7e34);
+}
+
+.btn-danger {
+    background: linear-gradient(to right, #dc3545, #c82333);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(to right, #c82333, #ab1e22);
+}
+
+.btn-warning {
+    background: linear-gradient(to right, #ffc107, #e0a800);
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(to right, #e0a800, #c69500);
+}
+
+.btn-info {
+    background: linear-gradient(to right, #17a2b8, #138496);
+}
+
+.btn-info:hover {
+    background: linear-gradient(to right, #138496, #0f6b78);
+}
+
+.btn-light {
+    background: linear-gradient(to right, #f8f9fa, #e2e6ea);
+    color: #212529;
+}
+
+.btn-light:hover {
+    background: linear-gradient(to right, #e2e6ea, #d4d7d9);
+}
+
+.btn-dark {
+    background: linear-gradient(to right, #343a40, #23272b);
+}
+
+.btn-dark:hover {
+    background: linear-gradient(to right, #23272b, #1a1d1f);
+}
+
+/* Card Background with Gradient */
+.card {
+    background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+}
+
+.card-header {
+    background: linear-gradient(to right, #ffffff, #e2e6ea);
+}
+
+/* Hover Card with Gradient */
+.hover-card {
+    background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+}
+
+.hover-card:hover {
+    background: linear-gradient(to bottom, #f4f4f4, #e2e6ea);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Elements with Gradient Borders */
+input, textarea, select {
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    background: linear-gradient(to right, #ffffff, #f4f4f4);
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007BFF;
+    background: linear-gradient(to right, #ffffff, #e2e6ea);
+}
+
+/* Tables with Gradient Header */
+table {
+    border-collapse: collapse;
+}
+
+th {
+    background: linear-gradient(to right, #f4f4f4, #e2e6ea);
+}
+
+/* Utility Classes */
+.mt-1, .mt-2, .mt-3, .mb-1, .mb-2, .mb-3 {
+    background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+}
+
+/* Container with Gradient Background */
+.container {
+    background: linear-gradient(to right, #ffffff, #f4f4f4);
+    padding: 1rem;
+}
+
+/* Columns with Gradient Backgrounds */
+.col {
+    background: linear-gradient(to right, #ffffff, #f4f4f4);
+}
+
+/* Row with Gradient Background */
+.row {
+    background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+}

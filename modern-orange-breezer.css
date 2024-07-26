@@ -1,0 +1,417 @@
+/* Import Raleway Font */
+@font-face {
+    font-family: 'Raleway';
+    src: url("installed/fonts/Raleway-Regular.ttf");
+}
+
+/* CSS Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent; /* Prevent tap highlight on touch devices */
+    font-family: 'Raleway', Arial, sans-serif; /* Apply Raleway font globally */
+    font-weight: 300; /* Make text weight thin by default */
+}
+
+html, body {
+    line-height: 1.6;
+    color: #f4f4f4;
+    background: linear-gradient(135deg, #f0e5e5, #f8d7da); /* Light pink gradient background */
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    color: #ff6f61; /* Coral pink for headings */
+    font-weight: 300; /* Ensure headers are also thin by default */
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.75rem; }
+h5 { font-size: 1.5rem; }
+h6 { font-size: 1.25rem; }
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+a {
+    color: #ff6f61; /* Coral pink for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button, input[type="button"], input[type="submit"], .btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6f61, #e55b4f); /* Coral pink gradient background */
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover, .btn:hover {
+    background: linear-gradient(135deg, #e55b4f, #ff6f61); /* Darker pink gradient for hover */
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #ff6f61, #e55b4f); /* Coral pink gradient */
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #e55b4f, #ff6f61); /* Darker pink gradient for hover */
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #ffb3b3, #f8a0a0); /* Light pink gradient */
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #f8a0a0, #ffb3b3); /* Slightly darker light pink gradient */
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #ff8c8c, #ff6f6f); /* Soft pink gradient */
+}
+
+.btn-success:hover {
+    background: linear-gradient(135deg, #ff6f6f, #ff8c8c); /* Slightly darker soft pink gradient */
+}
+
+.btn-danger {
+    background: linear-gradient(135deg, #ff4d4d, #e03e3e); /* Redder pink gradient */
+}
+
+.btn-danger:hover {
+    background: linear-gradient(135deg, #e03e3e, #ff4d4d); /* Darker red-pink gradient */
+}
+
+.btn-warning {
+    background: linear-gradient(135deg, #ffb347, #e0a800); /* Warm pink gradient */
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(135deg, #e0a800, #ffb347); /* Darker warm pink gradient */
+}
+
+.btn-info {
+    background: linear-gradient(135deg, #ff8c8c, #e55b4f); /* Soft pink gradient */
+}
+
+.btn-info:hover {
+    background: linear-gradient(135deg, #e55b4f, #ff8c8c); /* Darker pink gradient */
+}
+
+.btn-light {
+    background: linear-gradient(135deg, #f8d7da, #f5c6cb); /* Very light pink gradient */
+    color: #212529;
+}
+
+.btn-light:hover {
+    background: linear-gradient(135deg, #f5c6cb, #f8d7da); /* Slightly darker very light pink gradient */
+}
+
+.btn-dark {
+    background: linear-gradient(135deg, #d3a0a1, #b17c7a); /* Muted pink gradient */
+}
+
+.btn-dark:hover {
+    background: linear-gradient(135deg, #b17c7a, #d3a0a1); /* Darker muted pink gradient */
+}
+
+/* Forms */
+input, textarea, select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ff6f61; /* Coral pink border */
+    border-radius: 0.25rem;
+    background: #fff; /* White background for form elements */
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #ff6f61; /* Coral pink border */
+    outline: none;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ffb3b3; /* Light pink border */
+}
+
+th {
+    background: linear-gradient(135deg, #f8d7da, #f4c6c6); /* Very light pink gradient */
+    font-weight: bold;
+}
+
+/* Utility Classes (Optional) */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+.d-flex { display: flex; }
+.justify-content-center { justify-content: center; }
+.align-items-center { align-items: center; }
+
+/* Cards */
+.card {
+    background: linear-gradient(135deg, #fff, #f8d7da); /* White to very light pink gradient */
+    border: 1px solid #ffb3b3; /* Light pink border */
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #ff6f61; /* Coral pink */
+}
+
+.card-body {
+    font-size: 1rem;
+}
+
+/* Hover Card */
+.hover-card {
+    background: linear-gradient(135deg, #fff, #f8d7da); /* White to very light pink gradient */
+    border: 1px solid #ffb3b3; /* Light pink border */
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.hover-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* More Modern UI Classes */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    background: linear-gradient(135deg, #ff6f61, #e55b4f); /* Coral pink gradient */
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #e55b4f, #ff6f61); /* Darker pink gradient */
+    transform: translateY(-2px);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Row and Column Layouts */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem; /* Adjusts for padding */
+}
+
+.col {
+    flex: 1;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.col-1 { flex: 0 0 8.33%; }
+.col-2 { flex: 0 0 16.66%; }
+.col-3 { flex: 0 0 25%; }
+.col-4 { flex: 0 0 33.33%; }
+.col-5 { flex: 0 0 41.66%; }
+.col-6 { flex: 0 0 50%; }
+.col-7 { flex: 0 0 58.33%; }
+.col-8 { flex: 0 0 66.66%; }
+.col-9 { flex: 0 0 75%; }
+.col-10 { flex: 0 0 83.33%; }
+.col-11 { flex: 0 0 91.66%; }
+.col-12 { flex: 0 0 100%; }
+
+/* Cards */
+.card {
+    background: linear-gradient(135deg, #fff, #f8d7da); /* White to very light pink gradient */
+    border: 1px solid #ffb3b3; /* Light pink border */
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    color: #1C1C1C;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #ff6f61; /* Coral pink */
+}
+
+.card-body {
+    font-size: 1rem;
+}
+
+/* Modals */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(135deg, #fff, #f8d7da); /* White to very light pink gradient */
+    border: 1px solid #ffb3b3; /* Light pink border */
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    z-index: 1050; /* Make sure it's on top */
+}
+
+.modal.show {
+    display: block; /* Show modal */
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ffb3b3; /* Light pink border */
+    padding-bottom: 0.5rem;
+}
+
+.modal-body {
+    padding: 1rem 0;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    border-top: 1px solid #ffb3b3; /* Light pink border */
+    padding-top: 0.5rem;
+}
+
+/* Alerts */
+.alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+}
+
+.alert-success {
+    background: linear-gradient(135deg, #d4edda, #c3e6cb); /* Light green-pink gradient */
+    color: #155724; /* Dark green text */
+}
+
+.alert-info {
+    background: linear-gradient(135deg, #d1ecf1, #bee5eb); /* Light blue-pink gradient */
+    color: #0c5460; /* Dark blue text */
+}
+
+.alert-warning {
+    background: linear-gradient(135deg, #fff3cd, #ffeeba); /* Light yellow-pink gradient */
+    color: #856404; /* Dark yellow text */
+}
+
+.alert-danger {
+    background: linear-gradient(135deg, #f8d7da, #f5c6cb); /* Light red-pink gradient */
+    color: #721c24; /* Dark red text */
+}
+
+/* Additional Styles */
+footer {
+    background: linear-gradient(135deg, #f0e5e5, #f8d7da); /* Light pink gradient */
+    padding: 1rem;
+    text-align: center;
+    color: #333;
+    border-top: 1px solid #ffb3b3; /* Light pink border */
+}
+
+footer a {
+    color: #ff6f61; /* Coral pink */
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .col {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .btn {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+    h3 { font-size: 1.75rem; }
+    h4 { font-size: 1.5rem; }
+    h5 { font-size: 1.25rem; }
+    h6 { font-size: 1rem; }
+}

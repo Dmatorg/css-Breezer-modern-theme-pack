@@ -1,0 +1,276 @@
+/* Import Raleway Font */
+@font-face {
+    font-family: 'Raleway';
+    src: url("installed/fonts/Raleway-Regular.ttf");
+}
+
+/* CSS Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent; /* Prevent tap highlight on touch devices */
+    font-family: 'Raleway', Arial, sans-serif; /* Apply Raleway font globally */
+    font-weight: 300; /* Make text weight thin by default */
+}
+
+html, body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffeef8; /* Very light pink background */
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    color: #ff77a9; /* Bright pink for headings */
+    font-weight: 300; /* Ensure headers are also thin by default */
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.75rem; }
+h5 { font-size: 1.5rem; }
+h6 { font-size: 1.25rem; }
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+a {
+    color: #ff77a9; /* Bright pink for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button, input[type="button"], input[type="submit"], .btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff77a9; /* Bright pink background */
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover, .btn:hover {
+    background-color: #ff4a76; /* Darker pink for hover */
+    transform: translateY(-2px);
+}
+
+.btn-primary {
+    background-color: #ff77a9; /* Bright pink */
+}
+
+.btn-primary:hover {
+    background-color: #ff4a76; /* Darker pink for hover */
+}
+
+.btn-secondary {
+    background-color: #ffb3d9; /* Light pink */
+}
+
+.btn-secondary:hover {
+    background-color: #f8a0c0; /* Slightly darker light pink */
+}
+
+.btn-success {
+    background-color: #ff8c9f; /* Soft pink */
+}
+
+.btn-success:hover {
+    background-color: #ff6f85; /* Slightly darker soft pink */
+}
+
+.btn-danger {
+    background-color: #ff4d6d; /* Redder pink */
+}
+
+.btn-danger:hover {
+    background-color: #e03e5b; /* Darker red-pink */
+}
+
+.btn-warning {
+    background-color: #ff9f77; /* Warm pink */
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background-color: #e08a00; /* Darker warm pink */
+}
+
+.btn-info {
+    background-color: #ff8c9f; /* Soft pink */
+}
+
+.btn-info:hover {
+    background-color: #ff4a76; /* Darker pink */
+}
+
+.btn-light {
+    background-color: #f8d7da; /* Very light pink */
+    color: #212529;
+}
+
+.btn-light:hover {
+    background-color: #f5c6cb; /* Slightly darker very light pink */
+}
+
+.btn-dark {
+    background-color: #d3a0a3; /* Muted pink */
+}
+
+.btn-dark:hover {
+    background-color: #b17c7a; /* Darker muted pink */
+}
+
+/* Forms */
+input, textarea, select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ff77a9; /* Bright pink border */
+    border-radius: 0.25rem;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #ff77a9; /* Bright pink border */
+    outline: none;
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #ffb3d9; /* Light pink border */
+}
+
+th {
+    background-color: #f8d7da; /* Very light pink */
+    font-weight: bold;
+}
+
+/* Utility Classes (Optional) */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+.d-flex { display: flex; }
+.justify-content-center { justify-content: center; }
+.align-items-center { align-items: center; }
+
+/* Cards */
+.card {
+    background-color: #fff;
+    border: 1px solid #ffb3d9; /* Light pink border */
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #ff77a9; /* Bright pink */
+}
+
+.card-body {
+    font-size: 1rem;
+}
+
+/* Hover Card */
+.hover-card {
+    background-color: #fff;
+    border: 1px solid #ffb3d9; /* Light pink border */
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.hover-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* More Modern UI Classes */
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+    color: #fff;
+    background-color: #ff77a9; /* Bright pink */
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff4a76; /* Darker pink */
+    transform: translateY(-2px);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+}
+
+.col {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+.col-1 { flex: 0 0 8.33%; }
+.col-2 { flex: 0 0 16.66%; }
+.col-3 { flex: 0 0 25%; }
+.col-4 { flex: 0 0 33.33%; }
+.col-5 { flex: 0 0 41.66%; }
+.col-6 { flex: 0 0 50%; }
+.col-7 { flex: 0 0 58.33%; }
+.col-8 { flex: 0 0 66.66%; }
+.col-9 { flex: 0 0 75%; }
+.col-10 { flex: 0 0 83.33%; }
+.col-11 { flex: 0 0 91.66%; }
+.col-12 { flex: 0 0 100%; }

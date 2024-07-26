@@ -1,0 +1,270 @@
+/* Import Raleway Font */
+@font-face {
+    font-family: 'Raleway';
+    src: url("installed/fonts/Raleway-Regular.ttf");
+}
+
+/* CSS Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent; /* Prevent tap highlight on touch devices */
+    font-family: 'Raleway', Arial, sans-serif; /* Apply Raleway font globally */
+    font-weight: 300; /* Make text weight thin by default */
+}
+
+html, body {
+    line-height: 1.6;
+    color: #f4f4f4;
+    background: linear-gradient(to bottom, #121212, #1e1e1e); /* Dark gradient background */
+    background-attachment: fixed;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-weight: 300; /* Ensure headers are also thin by default */
+}
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.5rem; }
+h3 { font-size: 2rem; }
+h4 { font-size: 1.75rem; }
+h5 { font-size: 1.5rem; }
+h6 { font-size: 1.25rem; }
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Links */
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons with Gradients */
+button, input[type="button"], input[type="submit"], .btn {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(to right, #007BFF, #0056b3); /* Gradient background */
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover, .btn:hover {
+    background: linear-gradient(to right, #0056b3, #003d7a); /* Darker gradient on hover */
+    transform: translateY(-2px);
+}
+
+/* Button Variants with Gradients */
+.btn-primary {
+    background: linear-gradient(to right, #007BFF, #0056b3);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #0056b3, #003d7a);
+}
+
+.btn-secondary {
+    background: linear-gradient(to right, #6c757d, #5a6268);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(to right, #545b62, #4a4c50);
+}
+
+.btn-success {
+    background: linear-gradient(to right, #28a745, #218838);
+}
+
+.btn-success:hover {
+    background: linear-gradient(to right, #218838, #1e7e34);
+}
+
+.btn-danger {
+    background: linear-gradient(to right, #dc3545, #c82333);
+}
+
+.btn-danger:hover {
+    background: linear-gradient(to right, #c82333, #ab1e22);
+}
+
+.btn-warning {
+    background: linear-gradient(to right, #ffc107, #e0a800);
+    color: #212529;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(to right, #e0a800, #c69500);
+}
+
+.btn-info {
+    background: linear-gradient(to right, #17a2b8, #138496);
+}
+
+.btn-info:hover {
+    background: linear-gradient(to right, #138496, #0f6b78);
+}
+
+.btn-light {
+    background: linear-gradient(to right, #343a40, #23272b);
+    color: #f4f4f4;
+}
+
+.btn-light:hover {
+    background: linear-gradient(to right, #23272b, #1a1d1f);
+}
+
+.btn-dark {
+    background: linear-gradient(to right, #212529, #121416);
+}
+
+.btn-dark:hover {
+    background: linear-gradient(to right, #121416, #0b0d0d);
+}
+
+/* Forms */
+input, textarea, select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #555;
+    border-radius: 0.25rem;
+    background: linear-gradient(to bottom, #333, #444); /* Gradient background for inputs */
+    color: #f4f4f4;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #007BFF;
+    outline: none;
+    background: linear-gradient(to bottom, #444, #555); /* Slightly darker gradient on focus */
+}
+
+/* Tables with Gradient Header */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background: linear-gradient(to bottom, #333, #444); /* Gradient background for table */
+    color: #f4f4f4;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #555;
+}
+
+th {
+    background: linear-gradient(to right, #444, #555); /* Gradient header */
+    font-weight: bold;
+}
+
+/* Utility Classes (Optional) */
+.mt-1 { margin-top: 0.25rem; }
+.mt-2 { margin-top: 0.5rem; }
+.mt-3 { margin-top: 1rem; }
+
+.mb-1 { margin-bottom: 0.25rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-3 { margin-bottom: 1rem; }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-left { text-align: left; }
+
+.d-flex { display: flex; }
+.justify-content-center { justify-content: center; }
+.align-items-center { align-items: center; }
+
+/* Cards with Gradients */
+.card {
+    background: linear-gradient(to bottom, #333, #444); /* Gradient background for card */
+    border: 1px solid #444;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+    color: #f4f4f4;
+    background: linear-gradient(to right, #444, #555); /* Gradient for card header */
+}
+
+.card-body {
+    font-size: 1rem;
+    color: #f4f4f4;
+}
+
+/* Hover Card with Gradient */
+.hover-card {
+    background: linear-gradient(to bottom, #333, #444); /* Gradient background for hover card */
+    border: 1px solid #444;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.hover-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    transform: translateY(-5px);
+}
+
+/* Grid System with Gradient Background */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: linear-gradient(to bottom, #121212, #1e1e1e); /* Gradient background for container */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -0.5rem;
+}
+
+.col {
+    flex: 1;
+    padding: 0.5rem;
+}
+
+/* Responsive Columns */
+.col-1 { flex: 0 0 8.33%; }
+.col-2 { flex: 0 0 16.66%; }
+.col-3 { flex: 0 0 25%; }
+.col-4 { flex: 0 0 33.33%; }
+.col-5 { flex: 0 0 41.66%; }
+.col-6 { flex: 0 0 50%; }
+.col-7 { flex: 0 0 58.33%; }
+.col-8 { flex: 0 0 66.66%; }
+.col-9 { flex: 0 0 75%; }
+.col-10 { flex: 0 0 83.33%; }
+.col-11 { flex: 0 0 91.66%; }
+.col-12 { flex: 0 0 100%; }
