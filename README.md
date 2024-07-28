@@ -59,5 +59,6 @@ The [breezer theme css pack](#) comes with many variations. Common types release
 - `modern-pink-breezer-2.css`
 - `modern-pink-breezer-3.css`
 - `modern-pink-breezer-4.css`
+- `glass-breezer.css` (Added in v1.1 for glass morphism styling)
 
 **Note:** These file names describe the theme and its variation. For example, `light-breezer.css` describes the light alpha version of the theme package. With the modern prefix, `modern-light-breezer.css` defines the modern variation of the light alpha. Only the pink color supports the light variation and modern with a total of 4 sub-modern variations.
